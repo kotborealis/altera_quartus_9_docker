@@ -1,0 +1,11 @@
+{
+  "name": "",
+  "version": "",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "download-fonts": "wget http://github.com/google/fonts/archive/master.zip",
+    "build": "docker build . -t altera-quartus-9:latest",
+    "start": "xhost + && docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix altera-quartus-9:latest"
+  }
+}
