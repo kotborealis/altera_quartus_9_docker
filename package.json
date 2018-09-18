@@ -6,6 +6,7 @@
   "scripts": {
     "download-fonts": "wget http://github.com/google/fonts/archive/master.zip",
     "build": "docker build . -t altera-quartus-9:latest",
+    "install": "npm run-script download-fonts && npm run-script build",
     "start": "xhost + && docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix altera-quartus-9:latest"
   }
 }
