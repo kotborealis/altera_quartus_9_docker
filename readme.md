@@ -5,7 +5,7 @@ Install:
 npm run-script install
 ```
 
-Start:
+Start Quartus 9.1 using `run.sh` script, and specify which directory to mount to `/media` inside container:
 ```
-npm run-script start
+./run.sh ~
 ```
